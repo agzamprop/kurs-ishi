@@ -1,0 +1,7 @@
+{
+  "task_id": "task-restructure-kurs-ishi",
+  "task_description": "Restructure kurs ishi (course work) HTML file from 70 pages to exactly 45 pages, fix all formatting to meet university requirements (14pt font, 1.5 interval, page numbering, footnotes, glossary, appendices). Kirish must be 1 page, Xulosa max 1 page.",
+  "status": "in_progress",
+  "feature_order": ["FEAT-001", "FEAT-002"],
+  "blocked_reason": null
+}

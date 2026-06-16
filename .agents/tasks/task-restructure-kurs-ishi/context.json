@@ -1,0 +1,42 @@
+{
+  "project_type": "Single-page HTML document (course work / kurs ishi)",
+  "language": "HTML with inline CSS, content in Uzbek",
+  "build_system": "None - static HTML file",
+  "test_framework": "None - visual verification by opening in browser",
+  "build_command": null,
+  "test_command": null,
+  "verification_instructions": "Open index.html in a browser and verify page count is 45, formatting matches requirements, TOC page numbers are correct",
+  "snapshot_or_generated_files": null,
+  "setup_instructions": "No setup needed - plain HTML file",
+  "environment_constraints": "GitHub access via Kiro Powers for pushing. Must use github push_to_remote tool, not git push directly. Push to main branch. Push every 2 pages completed.",
+  "contribution_requirements": "Push incremental changes to main branch via GitHub Power every 2 pages completed",
+  "key_patterns": "Each page is a <div class='page'> element. Current file has 70 pages, needs exactly 45. Content about 'Muzqaymoq do'koni boshqaruv tizimi'. Pages use fixed A4 dimensions with CSS.",
+  "relevant_files": ["/projects/sandbox/kurs-ishi/index.html"],
+  "directory_structure": "Single file repository: index.html (2709 lines, ~320KB, 70 pages currently)",
+  "target_structure": {
+    "total_pages": 45,
+    "page_1": "Titul varogi (cover page)",
+    "page_2": "Mundarija (TOC) - numbered page 1 but no visible number",
+    "page_3": "Kirish (Introduction) - exactly 1 page",
+    "pages_4_39": "Asosiy qism - 3 bob, 9 paragraf (36 pages = ~80%)",
+    "page_40": "Xulosa va takliflar - max 1 page",
+    "pages_41_42": "Foydalanilgan adabiyotlar (2 pages, 25+ sources)",
+    "page_43": "Izohli lugat / Glossariy (20-30 terms)",
+    "pages_44_45": "Ilovalar (appendices - diagrams, code, tables)"
+  },
+  "formatting_requirements": {
+    "font_size": "14pt (not 16px)",
+    "line_height": "1.5 interval (line-height: 1.5)",
+    "margins": "left 30mm, right 15mm, top 20mm, bottom 20mm (padding: 2cm 1.5cm 2cm 3cm)",
+    "page_numbering": "Arabic numerals, center bottom, starts from mundarija (but mundarija itself has no visible number)",
+    "footnotes": "At bottom of page, 10pt font",
+    "headings": "Centered, bold",
+    "paragraph_indent": "1.25cm first line",
+    "font_family": "Times New Roman"
+  },
+  "github_info": {
+    "owner": "agzamprop",
+    "repo": "kurs-ishi",
+    "branch": "main"
+  }
+}

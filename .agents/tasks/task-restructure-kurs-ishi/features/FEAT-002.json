@@ -1,0 +1,25 @@
+{
+  "id": "FEAT-002",
+  "type": "fix",
+  "description": "Final verification and TOC page number correction. After FEAT-001 is complete, verify the page count is exactly 45, verify all mundarija page numbers match actual pages, and fix any discrepancies.",
+  "status": "pending",
+  "steps": [
+    "Step 1: Count all div.page elements and verify exactly 45 pages exist",
+    "Step 2: Map each section's starting page number by counting div.page elements from the start",
+    "Step 3: Update mundarija (TOC on page 2) with corrected page numbers that match actual content positions",
+    "Step 4: Verify page number footers show correct numbers (page 3 shows '3', page 4 shows '4', etc.)",
+    "Step 5: Final check that all formatting requirements are met (14pt, 1.5 line-height, correct margins, footnotes present, glossary has 20-30 terms)"
+  ],
+  "acceptance_criteria": [
+    "Mundarija page numbers exactly match actual page positions of each section",
+    "All 45 pages have correct sequential page number footers (starting from page 3)",
+    "No formatting regressions"
+  ],
+  "verification": [
+    "Open file and verify TOC page numbers match actual content pages",
+    "Count div.page elements - must be 45",
+    "Verify page footer numbers are sequential from 3 to 45"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

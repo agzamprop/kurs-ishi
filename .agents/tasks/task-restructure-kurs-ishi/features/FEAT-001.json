@@ -1,0 +1,46 @@
+{
+  "id": "FEAT-001",
+  "type": "refactor",
+  "description": "Complete rewrite of index.html to meet all university course work requirements. Restructure from 70 pages to exactly 45 pages with proper formatting, page numbering, footnotes, glossary, and appendices.",
+  "status": "completed",
+  "steps": [
+    "Step 1: Rewrite the CSS <style> section with correct formatting: font-size 14pt (not 16px), line-height 1.5, margins (padding: 2cm 1.5cm 2cm 3cm already correct), add page-number footer styling (arabic numerals centered at bottom, starting from page after mundarija), add footnote styling (10pt font at page bottom)",
+    "Step 2: Keep Page 1 (TITUL VAROGI/Cover) as-is with border styling. Keep the content: RENESSANS TA'LIM UNIVERSITETI, MATEMATIKA VA IQTISOD FAKULTETI, AXBOROT TEXNOLOGIYALARI KAFEDRASI, Fan: AXBOROT TIZIMLARI, Mavzu: MUZQAYMOQ DO'KONI BOSHQARUV TIZIMINI YARATISH, Talaba: Isoqjonov Agzam, 3-kurs 62S-23, Ustoz: dots. Karimov A.B., TOSHKENT-2026",
+    "Step 3: Write Page 2 (MUNDARIJA) with TOC entries and page numbers that match the actual page layout. No visible page number on this page. TOC entries: KIRISH...3, I BOB...4, 1.1...4, 1.2...8, 1.3...12, II BOB...16, 2.1...16, 2.2...20, 2.3...24, III BOB...28, 3.1...28, 3.2...32, 3.3...36, XULOSA...40, FOYDALANILGAN ADABIYOTLAR...41, GLOSSARIY...43, ILOVALAR...44. (These are approximate - will be adjusted in FEAT-002 after content is finalized)",
+    "Step 4: Write Page 3 (KIRISH) - EXACTLY 1 PAGE ONLY. Condense the current 4-page introduction into 1 page. Include: dolzarblik (relevance), maqsad (goal), vazifalar (objectives), tadqiqot ob'ekti va predmeti, kurs ishi tarkibi (structure). Must fit in one page with 14pt font and 1.5 line spacing.",
+    "Step 5: Write Pages 4-15 (I BOB - AXBOROT TIZIMLARI VA MUZQAYMOQ SANOATI TAHLILI, 12 pages). Three paragraphs: 1.1 Axborot tizimlarining nazariy asoslari (4 pages), 1.2 Muzqaymoq do'koni faoliyatini avtomatlashtirishning dolzarbligi (4 pages), 1.3 Mavjud boshqaruv tizimlarining qiyosiy tahlili (4 pages). Include tables, footnotes (snoska) for citations. Each paragraph should have substantive academic content.",
+    "Step 6: Write Pages 16-27 (II BOB - MUZQAYMOQ DO'KONI BOSHQARUV TIZIMINI LOYIHALASH, 12 pages). Three paragraphs: 2.1 Tizimga qo'yilgan talablar va funksional tahlil (4 pages), 2.2 Ma'lumotlar bazasini loyihalash (4 pages), 2.3 Tizim arxitekturasi va UML diagrammalar (4 pages). Include ER-diagram descriptions, tables, UML diagram descriptions, footnotes.",
+    "Step 7: Write Pages 28-39 (III BOB - TIZIMNI DASTURIY TA'MINOT BILAN AMALGA OSHIRISH, 12 pages). Three paragraphs: 3.1 Dasturlash tillari va texnologiyalarni tanlash (4 pages), 3.2 Tizim modullarini ishlab chiqish (4 pages), 3.3 Testlash va natijalar (4 pages). Include code snippets, test results tables, performance metrics, footnotes.",
+    "Step 8: Write Page 40 (XULOSA VA TAKLIFLAR) - MAX 1 PAGE. Summarize: main findings, practical significance, recommendations for future development.",
+    "Step 9: Write Pages 41-42 (FOYDALANILGAN ADABIYOTLAR - 2 pages). List at least 25 sources, formatted properly. Include Uzbek and international sources, recent years (2018-2026). Include web resources with access dates.",
+    "Step 10: Write Page 43 (GLOSSARIY / IZOHLI LUG'AT). Table with 20-30 IT terms relevant to the project with Uzbek explanations.",
+    "Step 11: Write Pages 44-45 (ILOVALAR - Appendices). Include: database schema SQL code, API endpoints table, system screenshots description (SVG mockups acceptable).",
+    "Step 12: Add page number footers to all pages starting from page 3 (Kirish). The numbering starts at 3 (cover=no number, mundarija=no number, kirish=3). Center-aligned at the bottom of each page.",
+    "Step 13: Add footnotes (snoska) - at least 1-2 per bob. Format: superscript number in text, footnote text at bottom of page in 10pt font with a horizontal line separator.",
+    "Step 14: Ensure all tables are numbered (e.g., 1.1-jadval, 2.3-jadval) and have captions. Ensure all figures/diagrams are numbered and captioned."
+  ],
+  "acceptance_criteria": [
+    "Total page count is exactly 45 (45 div.page elements)",
+    "Kirish is exactly 1 page (Page 3 only)",
+    "Xulosa is max 1 page (Page 40 only)",
+    "Font size is 14pt for body text",
+    "Line-height is 1.5",
+    "Page numbers appear centered at bottom starting from page 3",
+    "Mundarija page numbers match actual content pages",
+    "Footnotes present (at least 6 total across all bobs), 10pt font at page bottom",
+    "Glossary has 20-30 terms",
+    "Appendices section present with code and diagrams",
+    "All tables and figures are numbered and captioned",
+    "Content is in Uzbek language, about Muzqaymoq do'koni boshqaruv tizimi"
+  ],
+  "verification": [
+    "Count div.page elements in the file - must be exactly 45",
+    "Verify CSS has font-size: 14pt",
+    "Verify Kirish section occupies only 1 page div",
+    "Verify Xulosa section occupies only 1 page div",
+    "Verify page number elements exist starting from page 3",
+    "Verify footnote elements exist in bob sections"
+  ],
+  "blocked_reason": null,
+  "findings": "Complete rewrite successful. 45 pages verified, 14pt font, 1.5 line-height, KIRISH exactly 1 page, XULOSA exactly 1 page, 9 footnotes (6+ required), 23 glossary terms, page numbering from page 3. Pushed directly to main as instructed."
+}
